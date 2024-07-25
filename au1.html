@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //function soma (a,b){
+        //return a+b;
+        // }
+        // const resultado=soma (3,4);
+         //window.alert(resultado);
+
+        function somaDois(){
+        let a = parseFloat(prompt("insira o primeiro numero"));
+        let b = parseFloat(prompt("insira o segundo numero"));
+        resultado = a + b;
+        window.alert(resultado);
+     }
+        //somaDois();
+
+    //faça um qque calcule a media se >=7 aprovado, se não reprovado
+function media(){
+let notaum = parseFloat(prompt("insira a primeira nota: "));
+let notadois = parseFloat(prompt("insira a segunda nota: "));
+let mediasemestre = (notaum + notadois) / 2
+
+if (mediasemestre>=7){
+window.alert ("aprovado! media:" + mediasemestre)
+} else{
+    window.alert("reprovado!")
+}
+}
+
+media();
+
+//ultimo 
+function calcularTriangulo() {
+    let baseTriangulo = parseFloat(prompt("digite o valor da base do triangulo:"));
+    let alturaTriangulo = parseFloat(prompt("digite o valor da altura do triangulo:"));
+    let areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
+    window.alert(`A area do triangulo é: ${areaTriangulo}`);
+}
+function calcularTrapezio() {
+            let baseMaior = parseFloat(prompt("Digite o valor da base maior do Trapezio"));
+            let baseMenor = parseFloat(prompt("Digite o valor da base menor do Trapezio"));
+            let alturaTrapezio = parseFloat(prompt("Digite o valor da altura do Trapezio"));
+            let areaTrapezio = ((baseMaior + baseMenor)/2) * alturaTrapezio;
+            window.alert(`A area do Trapezio é ${areaTrapezio}`)}
+        
+
+        function calcularCirculo() {
+             let raio = parseFloat(prompt("Digite o valor do raio do Cìrculo:"));
+            let areaCirculo = Math.PI * raio ** 2;
+            window.alert(`A area do Circulo é ${areaCirculo}`);
+        }
+
+
+        function calcularQuadrado() {
+            let lado = parseFloat(prompt("Digite o valor do lado:"));
+            let areaQuadrado = lado ** 2;
+          window.alert(`A area do Quadrado é ${areaQuadrado}`);
+        }
+        var figura = prompt("Digite o tipo de figura geometrica (triangulo, trapezio, circulo ou quadrados)").toLowerCase();
+        
+        switch (figura) {
+            case "triangulo":
+                calcularTriangulo();
+                break;
+
+            case "trapezio":
+                calcularTrapezio();
+                break;
+
+            case "circulo":
+                calcularCirculo();
+                break;
+
+            case "quadrada":
+                calcularQuadrado();
+                break;
+
+            default:
+                window.alert("Figura não reconhecida, tente novamente");
+        }
+
+    </script>
+</body>
+</html>
